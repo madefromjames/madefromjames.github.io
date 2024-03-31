@@ -8969,7 +8969,8 @@ textarea.form-control-lg {
   width: 28px;
   height: 32px;
   cursor: pointer;
-  position: relative; }
+  position: relative; 
+  color: white}
   .burger.light:before, .burger.light span, .burger.light:after {
     background: #fff; }
 
