@@ -9898,3 +9898,8 @@ a {
 .shade {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.project-section {
+  max-height: 105px; /* Adjust the max-height value as needed */
+  overflow: auto; /* Add overflow: auto to enable scrolling if the content exceeds the max height */
+}
