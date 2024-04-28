@@ -9110,9 +9110,19 @@ a {
       padding-top: 7rem;
       padding-bottom: 2rem; } }
 
+.v-h-half {
+  height: 60vh;
+  min-height: 300px; }
+  @media (max-width: 767.98px) {
+    .v-h-full {
+      height: 100%;
+      min-height: auto;
+      padding-top: 7rem;
+      padding-bottom: 4rem; } }
+
 .section {
-  padding-top: 7rem;
-  padding-bottom: 7rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .number {
   font-size: 70px;
