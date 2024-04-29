@@ -4,52 +4,38 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<link rel="shortcut icon" href="favicon.png">
+	<link rel="shortcut icon" href="fonts/favicon.png">
 
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
 	<link rel="stylesheet" href="fonts/feather/style.css">
 
-	<!-- <link rel="stylesheet" href="css/aos.css"> -->
-	<link rel="stylesheet" href="css/glightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>James</title>
 </head>
 <body>
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
 
-	<nav class="site-nav" id="index">
+	<nav class="site-nav">
 		<div class="container">
 			<div class="site-navigation">
 				<a href="#madefromjames" class="logo m-0">madefromjames</a>
 
-				<ul class="js-clone-nav d-lg-inline-block text-start site-menu float-end">
-					<!-- <li class="active"><a href="#index">Home</a></li> -->
+				<ul class="d-block site-menu float-end">
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 
-				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
-					<span></span>
-				</a>
 			</div>
 		</div>
 	</nav>
 
 
 	<div class="hero v-h-full overlay">
-		<div class="img-bg rellax">
+		<div>
 			<img src="images/hero_2.jpg" alt="Image" class="img-fluid">
 		</div>
 		<div class="container">
@@ -58,7 +44,7 @@
 				<div class="col-lg-10 col-xxl-6">
 					<h1 class="heading-2 text-white mb-5">Hey, I'm James.</h1>
 					<p class="text-muted mb-5 h2">A <b class="text-white">Developer</b> that embraces a world of unimaginable endless possibilities in creating innovative solutions and pushing the boundaries of technology.</p>
-					<p class="d-flex"><a href="contact.html#contact-form" class="btn btn-primary-outline white me-4">Contact me</a><a href="resume.pdf" class="btn btn-primary-outline white me-4">Download Resume</a></p>
+					<p class="d-flex"><a href="#contact-form" class="btn btn-primary-outline white me-4">Contact me</a><a href="resume.pdf" class="btn btn-primary-outline white me-4">Download Resume</a></p>
 				</div>
 
 			</div>
@@ -75,7 +61,6 @@
 					<h2 class="mb-4">Passionate Developer</h2>
 					<p>As a developer, I thrive on the thrill of turning ideas into reality, and nothing excites me more than the opportunity to solve complex problems with code. I continuously learn from others, so I'm always eager to connect with fellow developers and join forces on exciting projects.</p>
 					<p>I'm driven by the desire to make a meaningful impact, creating high-quality, user-friendly solutions that solve real-world problems. Feel free to reach out to me at your convenience. I'm always looking for new opportunities to collaborate and make a difference in the development world.</p>
-					<p><a href="#" class="btn btn-black">Get started</a></p>
 				</div>
 				<div class="col-lg-8">
 					<div class="row">
@@ -166,8 +151,17 @@
 
 	
 
-	<div class="hero v-h-half overlay" id="about">
-		<div class="img-bg">
+	<div class="hero v-h-half overlay" id="portfolio">
+		<nav class="site-nav">
+			<div class="container">
+				<div class="site-navigation">
+					<ul class="d-block site-menu float-end">
+						<li><a href="#">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
 			<img src="images/hero_1.jpg" alt="Image" class="img-fluid">
 		</div>
 		<div class="container">
@@ -280,7 +274,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-3">
-							<a href="images/img_v_7-min.jpg" class="media-1 glightbox shade">
+							<a href="images/img_v_7-min.jpg" class="media-1 shade">
 								<img src="images/img_v_7-min.jpg" alt="Image" class="img-fluid">
 								<div class="media-1-content">
 									<h2>Upcoming Projects</h2>
@@ -307,7 +301,7 @@
 				<div class="col-lg-4 pe-lg-5">
 					<h2 class="mb-4">Have a project on your mind.</h2>
 					<p class="mb-5">Let's turn your vision into reality together. I'm here to collaborate with you every step of the way. From conceptualization to implementation, let's create something extraordinary that exceeds your expectations.</p>
-					<p><a href="#" class="btn btn-black">Get started</a></p>
+					<p><a href="#contact-form" class="btn btn-black">Get started</a></p>
 				</div>
 				<div class="col-lg-8">
 					<div class="row">
@@ -323,8 +317,17 @@
 		</div>
 	</div>
 
-	<div class="hero v-h-half overlay" id="about">
-		<div class="img-bg">
+	<div class="hero v-h-half overlay" id="services">
+		<nav class="site-nav">
+			<div class="container">
+				<div class="site-navigation">
+					<ul class="d-block site-menu float-end">
+						<li><a href="#">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
 			<img src="images/hero-2-min.jpg" alt="Image" class="img-fluid">
 		</div>
 		<div class="container">
@@ -343,7 +346,7 @@
 			<div class="row mb-5">
 				<div class="col-12 text-center">
 					<span class="subheading d-inline-block mb-2">Our Services</span>
-					<h2>What we can do for you?</h2>
+					<h2>What I can do for you?</h2>
 				</div>
 			</div>
 			<div class="row align-items-stretch">
@@ -365,7 +368,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 mb-4 mb-lg-5>
+				<div class="col-md-6 col-lg-4 mb-4 mb-lg-5">
 					<div class="unit-4 d-flex">
 						<div class="unit-4-icon me-4"><span class="feather-database"></span></div>
 						<div>
@@ -405,54 +408,17 @@
 		</div>
 	</div>
 
-
-	<!-- <div class="section bg-light">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Collaborate</h3>
-							<p>I believe that by working together, we can achieve more than we ever could alone. Whether it's brainstorming new ideas, solving complex problems, or bringing a project to life, I'm always eager to join forces with other developers and collaborate on exciting projects. By combining our skills and expertise, we can push the boundaries of what's possible and create truly innovative solutions that make a real impact.</p>
-						</div>
-
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Connect</h3>
-							<p>Connecting with others is also a crucial aspect of my work as a developer. I'm passionate about building strong relationships with my clients, colleagues, and the wider development community. By engaging in open and honest communication, I strive to create a supportive environment where we can all learn, grow, and succeed together. I'm always looking for new ways to connect with others to share ideas together.</p>
-						</div>
-
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Grow</h3>
-							<p>I'm constantly seeking out new challenges and opportunities to learn and expand my skills. By taking on complex projects and pushing myself to try new things, I'm able to grow both personally and professionally, and to make a more meaningful impact in the world of development. Whether it's learning a new programming language, experimenting with a new framework, or contributing to open-source for improvement</p>
-						</div>
-					</div>
+	<div class="hero v-h-half overlay" id="about">
+		<nav class="site-nav">
+			<div class="container">
+				<div class="site-navigation">
+					<ul class="d-block site-menu float-end">
+						<li><a href="#">Home</a></li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</div> -->
-
-	<div class="hero v-h-half overlay" id="about">
-		<div class="img-bg">
+		</nav>
+		<div >
 			<img src="images/hero_3.jpg" alt="Image" class="img-fluid">
 		</div>
 		<div class="container">
@@ -559,7 +525,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-6 col-lg-4">
-							<a href="images/CS50P.png" class="media-1 glightbox">
+							<a href="images/CS50P.png" class="media-1">
 								<img src="images/CS50P.png" alt="Image" class="img-fluid">
 								<div class="media-1-content">
 									<h2>Harvard CS50P</h2>
@@ -569,7 +535,7 @@
 							</a>
 						</div>
 						<div class="col-md-6 col-lg-4">
-							<a href="images/cert_1.png" class="media-1 glightbox">
+							<a href="images/cert_1.png" class="media-1">
 								<img src="images/cert_1.png" alt="Image" class="img-fluid">
 								<div class="media-1-content">
 									<h2>Future Academy Africa</h2>
@@ -585,7 +551,16 @@
 	</div>
 
 	<div class="hero v-h-half overlay mb-5" id="contact">
-		<div class="img-bg">
+		<nav class="site-nav">
+			<div class="container">
+				<div class="site-navigation">
+					<ul class="d-block site-menu float-end">
+						<li><a href="#">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
 			<img src="images/hero_4.jpg" alt="Image" class="img-fluid">
 		</div>
 		<div class="container">
@@ -646,7 +621,6 @@
 							<li><a href="https://twitter.com/madefromjames" target="_blank"><span class="icon-twitter"></span></a></li>
 							<li><a href="https://github.com/madefromjames" target="_blank"><span class="icon-github"></span></a></li>
 							<li><a href="https://www.linkedin.com/in/madefromjames/" target="_blank"><span class="icon-linkedin"></span></a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=2347065546427" target="_blank"><span class="icon-whatsapp"></span></a></li>
 						</ul>
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-4 -->
@@ -654,7 +628,7 @@
 					<div class="widget">
 						<h3>Sources</h3>
 						<ul class="list-unstyled float-start links">
-							<li><a href="#index">Home</a></li>
+							<li><a href="#">Home</a></li>
 							<li><a href="#services">Services</a></li>
 							<li><a href="#about">About Me</a></li>
 						</ul>
@@ -673,26 +647,12 @@
 
 			<div class="row mt-5">
 				<div class="col-12 text-center">
-					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; James <!-- License information: https://untree.co/license/ -->
+					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; madefromjames <!-- License information: https://untree.co/license/ -->
 					</p>
 				</div>
 			</div>
 		</div> <!-- /.container -->
 	</div> <!-- /.site-footer -->
 
-
-	<!-- Preloader -->
-	<div id="overlayer"></div>
-	<div class="loader">
-		<div class="spinner-border" role="status">
-			<span class="visually-hidden">Loading...</span>
-		</div>
-	</div>
-
-
-	<script src="js/navbar.js"></script>
-	<script src="js/glightbox.min.js"></script>
-	<script src="js/rellax.min.js"></script>
-	<script src="js/custom.js"></script>
 </body>
 </html>
