@@ -32,20 +32,20 @@
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-body {
-  font-family: "Roboto", sans-serif;
+/* body {
   font-weight: 300;
-  overflow-x: hidden;
   font-size: 16px;
-  color: #808080; }
+  color: #808080; } */
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
