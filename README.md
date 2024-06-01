@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website, a digital space where I showcase my skills, projects, and the journey of pushing the boundaries of technology.
 
-Visit James' [Portfolio](https://madefromjames.github.io/) Live to interact with my projects and learn more about my work.
+Visit James' <a href="https://madefromjames.github.io/" target="_blank">Portfolio</a> Live to interact with my projects and learn more about my work.
 
 ## Contact
 
