@@ -1220,7 +1220,7 @@ textarea.form-control {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #ff4c4c;
+  background-color: #3b3d40;
   -webkit-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease; }
@@ -1570,6 +1570,11 @@ textarea.form-control {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
+
+.py-md-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important
+}
 
 .pt-0 {
   padding-top: 0 !important; }
@@ -2400,7 +2405,7 @@ a {
         color: #fff; }
 
 /* Add styles specific to the "roadmap" list within the "skills-section" */
-.skills-section ul.roadmap {
+.abilities-section ul.roadmap {
   --col-gap: 2rem;
   --row-gap: 2rem;
   --line-w: 0.25rem;
@@ -2414,7 +2419,7 @@ a {
 }
 
 /* line */
-.skills-section ul.roadmap::before {
+.abilities-section ul.roadmap::before {
   content: "";
   grid-column: 1;
   grid-row: 1 / span 20;
@@ -2423,12 +2428,12 @@ a {
 }
 
 /* row gaps */
-.skills-section ul.roadmap li:not(:last-child) {
+.abilities-section ul.roadmap li:not(:last-child) {
   margin-bottom: var(--row-gap);
 }
 
 /* card */
-.skills-section ul.roadmap li {
+.abilities-section ul.roadmap li {
   grid-column: 2;
   --inlineP: 1.5rem;
   margin-inline: var(--inlineP);
@@ -2438,7 +2443,7 @@ a {
 }
 
 /* date */
-.skills-section ul.roadmap li .title {
+.abilities-section ul.roadmap li .title {
   --dateH: 3rem;
   height: var(--dateH);
   margin-inline: calc(var(--inlineP) * -1);
@@ -2454,7 +2459,7 @@ a {
 }
 
 /* date flap */
-.skills-section ul.roadmap li .title::before {
+.abilities-section ul.roadmap li .title::before {
   content: "";
   width: var(--inlineP);
   aspect-ratio: 1;
@@ -2467,7 +2472,7 @@ a {
 }
 
 /* circle */
-.skills-section ul.roadmap li .title::after {
+.abilities-section ul.roadmap li .title::after {
   content: "";
   position: absolute;
   width: 2rem;
@@ -2481,14 +2486,14 @@ a {
 }
 
 /* title */
-.skills-section ul.roadmap li .topic {
+.abilities-section ul.roadmap li .topic {
   background: var(--bgColor);
   position: relative;
   padding-inline: 1.5rem;
   font-size: 1.1rem;
 }
 
-.skills-section ul.roadmap li .topic ul {
+.abilities-section ul.roadmap li .topic ul {
   list-style-type: disc;
 }
 
@@ -2496,7 +2501,7 @@ a {
   margin-bottom: 0 !important;
 }
 
-.skills-section ul.roadmap li .topic {
+.abilities-section ul.roadmap li .topic {
   overflow: hidden;
   padding-block-start: 1.5rem;
   /* padding-block-end: 1rem; */
@@ -2504,7 +2509,7 @@ a {
 }
 
 /* shadows */
-.skills-section ul.roadmap li .topic::before {
+.abilities-section ul.roadmap li .topic::before {
   content: "";
   position: absolute;
   width: 90%;
@@ -2515,36 +2520,113 @@ a {
   filter: blur(4px);
   transform: translate(-50%, 50%);
 }
-.skills-section ul.roadmap li .topic::before {
+.abilities-section ul.roadmap li .topic::before {
   bottom: calc(100% + 0.125rem);
 }
 
 @media (min-width: 40rem) {
-  .skills-section ul.roadmap {
+  .abilities-section ul.roadmap {
       grid-template-columns: 1fr var(--line-w) 1fr;
   }
-  .skills-section ul.roadmap::before {
+  .abilities-section ul.roadmap::before {
       grid-column: 2;
   }
-  .skills-section ul.roadmap li:nth-child(odd) {
+  .abilities-section ul.roadmap li:nth-child(odd) {
       grid-column: 1;
   }
-  .skills-section ul.roadmap li:nth-child(even) {
+  .abilities-section ul.roadmap li:nth-child(even) {
       grid-column: 3;
   }
   /* start second card */
-  .skills-section ul.roadmap li:nth-child(2) {
+  .abilities-section ul.roadmap li:nth-child(2) {
       grid-row: 2/4;
   }
-  .skills-section ul.roadmap li:nth-child(odd) .title::before {
+  .abilities-section ul.roadmap li:nth-child(odd) .title::before {
       clip-path: polygon(0 0, 100% 0, 100% 100%);
       left: 0;
   }
-  .skills-section ul.roadmap li:nth-child(odd) .title::after {
+  .abilities-section ul.roadmap li:nth-child(odd) .title::after {
       transform: translate(-50%, -50%);
       left: calc(100% + var(--col-gap) + var(--line-w) / 2);
   }
-  .skills-section ul.roadmap li:nth-child(odd) .title {
+  .abilities-section ul.roadmap li:nth-child(odd) .title {
       border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
   }
+}
+
+/* new stuff */
+
+.justify-content-md-center {
+  justify-content: center !important
+}
+
+.overflow-hidden {
+  overflow: hidden !important
+}
+
+.justify-content-xl-center {
+  justify-content: center !important
+}
+
+.g-3,
+.gy-3 {
+    --bs-gutter-y: 1rem
+}
+
+.g-sm-4,
+.gy-sm-4 {
+    --bs-gutter-y: 1.5rem
+}
+
+/* col-12 */
+
+.col-sm-6 {
+  flex: 0 0 auto;
+  width: 50%
+}
+
+/* col-xl-5 */
+
+.rounded {
+  border-radius: var(--bs-border-radius) !important
+}
+
+/* shadow-sm */
+
+/* p-3 */
+
+.p-md-4 {
+  padding: 1.5rem !important
+}
+
+.p-xxl-5 {
+  padding: 3rem !important
+}
+
+.fw-bold {
+  font-weight: 700 !important
+}
+
+.fst-italic {
+  font-style: italic !important
+}
+
+/* progress {
+  vertical-align: baseline
+} */
+
+.bsb-skill-1 .progress-bar-width-1 {
+  width: 85%
+}
+
+.bsb-skill-1 .progress-bar-width-2 {
+  width: 75%
+}
+
+.bsb-skill-1 .progress-bar-width-3 {
+  width: 65%
+}
+
+.bsb-skill-1 .progress-bar-width-4 {
+  width: 95%
 }
