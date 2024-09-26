@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS4406 Unit 3 - Bouncing 3D Object</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+
+    <script>
+        // Set up the scene, camera, and renderer
+        var scene = new THREE.Scene();
+        var aspectRatio = window.innerWidth / window.innerHeight;
+        var camera = new THREE.OrthographicCamera(
+            -5 * aspectRatio, // Left
+            5 * aspectRatio,  // Right
+            5,  // Top
+            -5, // Bottom
+            0.1,  // Near clipping plane
+            1000  // Far clipping plane
+        );
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Create a diagonal gradient background
+        var canvas = document.createElement('canvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var context = canvas.getContext('2d');
+
+        // Create gradient
+        var gradient = context.createLinearGradient(0, 0, canvas.width, canvas.height);
+        gradient.addColorStop(0, '#FFFFAA'); // Light yellow at the top left
+        gradient.addColorStop(1, '#000000'); // Dark at the bottom right
+
+        // Apply gradient to canvas
+        context.fillStyle = gradient;
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Use canvas as texture
+        var backgroundTexture = new THREE.CanvasTexture(canvas);
+        scene.background = backgroundTexture;
+
+        // Create the 3D object (Sphere for this example)
+        var geometry = new THREE.SphereGeometry(1, 32, 32);  // Change to Cube or TorusKnot if needed
+        var material = new THREE.MeshPhongMaterial({ color: 0xff0000, shininess: 100 });  // Use Phong for better reflections
+        var myMesh = new THREE.Mesh(geometry, material);
+        scene.add(myMesh);
+
+        // Set up the point light source (fixed position, light-yellow)
+        var pointLight = new THREE.PointLight(0xFFFFAA, 1.0, 100);  // Increased intensity
+        pointLight.position.set(-10, 10, 10);  // Upper-left corner
+        scene.add(pointLight);
+
+        // Add an ambient light for general illumination (brighter and softer yellow)
+        var ambientLight = new THREE.AmbientLight(0xFFFFCC, 0.2);  // Brighter ambient light for soft overall illumination
+        scene.add(ambientLight);
+
+        // Set the initial position and movement directions
+        var directionX = 0.05;
+        var directionY = 0.05;
+
+        // Set the camera position
+        camera.position.z = 5;
+
+        // Define the limits of the viewing area
+        var maxX = 4.5;
+        var minX = -4.5;
+        var maxY = 4.5;
+        var minY = -4.5;
+
+        // Function to animate the object (move and bounce)
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Move the object
+            myMesh.position.x += directionX;
+            myMesh.position.y += directionY;
+
+            // Check for collisions with the edges and reverse direction
+            if (myMesh.position.x >= maxX || myMesh.position.x <= minX) {
+                directionX = -directionX;  // Reverse direction on the X-axis
+                myMesh.material.color.set(Math.random() * 0xffffff);  // Change color
+            }
+            if (myMesh.position.y >= maxY || myMesh.position.y <= minY) {
+                directionY = -directionY;  // Reverse direction on the Y-axis
+                myMesh.material.color.set(Math.random() * 0xffffff);  // Change color
+            }
+
+            // Render the scene
+            renderer.render(scene, camera);
+        }
+
+        // Start the animation loop
+        animate();
+    </script>
+</body>
+
+</html>
