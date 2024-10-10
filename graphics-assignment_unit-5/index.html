@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Methane Molecule</title>
+    <style>
+        /* Ensures canvas takes up the full screen */
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <!-- Load Three.js and OrbitControls from CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script>
+        // Initialize the scene, camera, and renderer
+        const scene = new THREE.Scene(); // Main 3D scene container
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000); // Perspective camera
+        const renderer = new THREE.WebGLRenderer({ antialias: true }); // WebGL renderer with antialiasing for smoother edges
+        renderer.setSize(window.innerWidth, window.innerHeight); // Set renderer size to fill the window
+        document.body.appendChild(renderer.domElement); // Attach the canvas to the document
+
+        // Set the camera position for an optimal view of the molecule
+        camera.position.z = 8;
+
+        // Add a directional light to simulate sunlight
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(5, 5, 5).normalize(); // Set light direction and intensity
+        scene.add(light);
+
+        // Create the central carbon atom (Red sphere)
+        const carbonGeometry = new THREE.SphereGeometry(1, 32, 32); // Geometry for the carbon atom
+        const carbonMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000 }); // Material with red color
+        const carbon = new THREE.Mesh(carbonGeometry, carbonMaterial); // Mesh combining geometry and material
+        scene.add(carbon);
+
+        // Positions for hydrogen atoms in a tetrahedral arrangement
+        const hydrogenPositions = [
+            [2, 1, 1],   // Position for the first hydrogen atom
+            [-2, -1, 1], // Position for the second hydrogen atom
+            [-1, 2, -1], // Position for the third hydrogen atom
+            [1, -2, -1]  // Position for the fourth hydrogen atom
+        ];
+
+        // Create hydrogen atoms (Blue spheres)
+        const hydrogenGeometry = new THREE.SphereGeometry(0.5, 32, 32); // Geometry for hydrogen atoms
+        const hydrogenMaterial = new THREE.MeshPhongMaterial({ color: 0x0000ff }); // Blue material for hydrogen
+        const hydrogenAtoms = []; // Store hydrogen atoms for reference
+
+        // Create and add hydrogen atoms to the scene
+        hydrogenPositions.forEach(pos => {
+            const hydrogen = new THREE.Mesh(hydrogenGeometry, hydrogenMaterial);
+            hydrogen.position.set(...pos); // Set the position for each hydrogen atom
+            scene.add(hydrogen);
+            hydrogenAtoms.push(hydrogen); // Save reference for bond creation
+        });
+
+        // Function to create bonds (cylinders) between the carbon atom and each hydrogen atom
+        function createBond(start, end) {
+            const bondLength = new THREE.Vector3().subVectors(end, start).length(); // Calculate distance between two atoms
+            const bondGeometry = new THREE.CylinderGeometry(0.1, 0.1, bondLength, 32); // Create cylinder geometry for bond
+            const bondMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff }); // White color for bond material
+
+            const bond = new THREE.Mesh(bondGeometry, bondMaterial); // Create bond mesh
+            const midPoint = new THREE.Vector3().addVectors(start, end).multiplyScalar(0.5); // Calculate midpoint between atoms
+            bond.position.copy(midPoint); // Set bond's position to midpoint
+
+            // Calculate the bond's direction and rotate it accordingly
+            const direction = new THREE.Vector3().subVectors(end, start).normalize(); // Direction from carbon to hydrogen
+            const axis = new THREE.Vector3(0, 1, 0).cross(direction).normalize(); // Rotation axis
+            const angle = Math.acos(new THREE.Vector3(0, 1, 0).dot(direction)); // Angle for rotation
+            bond.quaternion.setFromAxisAngle(axis, angle); // Set bond's orientation
+
+            scene.add(bond); // Add bond to the scene
+        }
+
+        // Create bonds between the carbon atom and each hydrogen atom
+        hydrogenAtoms.forEach(hydrogen => {
+            createBond(carbon.position, hydrogen.position);
+        });
+
+        // Create a green plane to represent the ground
+        const planeGeometry = new THREE.PlaneGeometry(10, 10); // Plane size
+        const planeMaterial = new THREE.MeshPhongMaterial({ color: 0x00ff00 }); // Green color for the plane
+        const plane = new THREE.Mesh(planeGeometry, planeMaterial); // Create plane mesh
+        plane.rotation.x = -Math.PI / 2; // Rotate the plane to lie flat on the XZ axis
+        plane.position.y = -3; // Position the plane below the molecule
+        scene.add(plane);
+
+        // Enable shadows for the molecule and the plane
+        renderer.shadowMap.enabled = true; // Enable shadow mapping
+        light.castShadow = true; // Enable light to cast shadows
+        carbon.castShadow = true; // Carbon atom casts shadows
+        hydrogenAtoms.forEach(hydrogen => hydrogen.castShadow = true); // Each hydrogen atom casts shadows
+        plane.receiveShadow = true; // The plane receives shadows
+
+        // Enable mouse controls for rotating the molecule
+        const controls = new THREE.OrbitControls(camera, renderer.domElement); // Orbit controls to interact with the model
+
+        // Animation loop to render the scene and update controls
+        function animate() {
+            requestAnimationFrame(animate); // Request the next animation frame
+            controls.update(); // Update controls for smooth interaction
+            renderer.render(scene, camera); // Render the updated scene
+        }
+        animate(); // Start the animation loop
+
+        // Handle window resizing to maintain aspect ratio
+        window.addEventListener('resize', function () {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            renderer.setSize(width, height); // Adjust renderer size
+            camera.aspect = width / height; // Update camera aspect ratio
+            camera.updateProjectionMatrix(); // Apply changes to the camera projection
+        });
+    </script>
+</body>
+</html>
