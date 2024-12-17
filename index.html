@@ -1,680 +1,509 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-	
-	<link rel="shortcut icon" href="fonts/favicon.png">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="fonts/feather/style.css">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-	<link rel="stylesheet" href="style.css">
-
-	<title>James - Personal Website</title>
-</head>
-<body>
-
-	<nav class="site-nav">
-		<div class="container">
-			<div class="site-navigation">
-				<a href="index.html" class="logo m-0">madefromjames</a>
-
-				<ul class="d-block site-menu float-end">
-					<li><a href="#portfolio">Portfolio</a></li>
-					<!-- <li><a href="#skills">Skills</a></li> -->
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#get-in-touch">Get in touch</a></li>
-				</ul>
-
-			</div>
-		</div>
-	</nav>
-
-
-	<div class="hero v-h-full overlay">
-		<div>
-			<img src="images/hero_2.jpg" alt="Image" class="img-fluid">
-		</div>
-		<div class="container">
-			<div class="row align-items-center v-h-full">
-
-				<div class="col-lg-10 col-xxl-6">
-					<h1 class="heading-2 text-white mb-5">Hey, I'm James.</h1>
-					<p class="text-muted mb-5 h2">A <b class="text-light">Developer</b> that embraces a world of unimaginable endless possibilities in creating innovative solutions and pushing the boundaries of technology.</p>
-					<p class="d-flex"><a href="#contact-form" class="btn btn-primary-outline white me-4">Contact me</a><a href="resume.pdf" class="btn btn-primary-outline white me-4">Download Resume</a></p>
-				</div>
-
-			</div>
-		</div>
-
-	</div>
-
-
-	<div class="section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8">
-					<div class="row">
-						<div class="col-6 col-lg-6 mt-5">
-							<img src="images/img_v_1-min.jpg" alt="Image" class="img-fluid rounded">
-						</div>
-						<div class="col-6 col-lg-6">
-							<img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid rounded">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section class="section abilities-section bg-light mb-5">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-12 text-center">
-					<span class="subheading d-inline-block mb-2">abilities</span>
-					<h2>Impressive abilities tailored for you.</h2>
-				</div>
-			</div>
-			<div>
-				<ul class="roadmap">
-					<li style="--accent-color:#2c2e2c">
-						<div class="title">Fundamentals of Python</div>
-						<div class="topic">
-							<ul class="list-unstyled float-start" style="list-style-type: disc !important;">
-								<li>• Classes and Objects </li>
-								<li>• Exceptional handling </li>
-								<li>• Classes and Objects </li>
-							</ul>
-						</div>
-					</li>
-					<li style="--accent-color:#2c2e2c">
-						<div class="title">Python Libraries and Frameworks</div>
-						<div class="topic">
-							<ul class="list-unstyled float-start">
-								<li>• Django</li>
-								<li>• Flask</li>
-							</ul>
-						</div>
-					</li>
-					<li style="--accent-color:#2c2e2c">
-						<div class="title">Database Handling</div>
-						<div class="topic list-unstyled float-start">
-							<ul class="list-unstyled float-start">
-								<li>• SQL Queries</li>
-								<li>• Data Models with Django</li>
-								<li>• Using Python Modules to Connect with Databases</li>
-							</ul>
-						</div>
-					</li>
-					<li style="--accent-color:#2c2e2c">
-						<div class="title">Web Development Basics</div>
-						<div class="topic">
-							<ul class="list-unstyled float-start">
-								<li>• Understanding HTTP 
-								<li>• Front-end basics (HTML, CSS, JavaScript)</li>
-								<li>• Client-Server Architecture</li>
-							</ul>
-						</div>
-					</li>
-					<li style="--accent-color:#2c2e2c">
-						<div class="title">Testing and Debugging in Python</div>
-						<div class="topic">
-							<ul class="list-unstyled float-start">
-								<li>• Writing test cases with unittest module</li>
-								<li>• Understanding assertions and their uses</li>
-							</ul>
-						</div>
-					</li>
-					<li style="--accent-color:#2c2e2c">
-						<div class="title">Web Scraping</div>
-						<div class="topic">
-							<ul class="list-unstyled float-start">
-								<li>• Understanding HTML</li>
-								<li>• Using requests and BeautifulSoup</li>
-								<li>• Regular Expression for Data Extraction</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	
-
-	<div class="hero v-h-half overlay" id="portfolio">
-		<nav class="site-nav">
-			<div class="container">
-				<div class="site-navigation">
-					<ul class="d-block site-menu float-end">
-						<li><a href="#">Home</a></li>
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">James Emmanuel</a></h1>
+					<p>I write code, contribute to open-source projects, and love listening to music.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Things I Can Do</a></li>
+						<li><a href="#three">A Few Projects</a></li>
+						<li><a href="#four">Contact</a></li>
 					</ul>
-				</div>
-			</div>
-		</nav>
-		<div>
-			<img src="images/hero_1.jpg" alt="Image" class="img-fluid">
-		</div>
-		<div class="container">
-			<div class="row align-items-center v-h-half">
-
-				<div class="col-lg-7 col-xxl-6 mx-auto text-center">
-					<h1 class="heading-2 text-white mb-3">Portfolio</h1>
-					<p class="text-white lead mb-4">Browse through my portfolio to see examples of my past work and projects.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<div class="section pad bg-light mb-0">
-		<div class="container">
-
-			<div class="row">
-				<div class="container-fluid feature">
-					<div class="row">
-						<div class="col-md-4 col-lg-3">
-							<a href="https://madefromjames.pythonanywhere.com/" class="media-1 shadow-sm" target="_blank">
-								<img src="images/stockmarket.jpg" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Stock Market</h2>
-									<span class="category">Web Application</span>
-								</div>
-							</a>
-							<div>
-								<span class="subheading d-inline-block">Web Application</span>
-								<h3 class="h5">Stock Market</h3>
-								<p class="overflow-auto mh">A financial management tool enabling stock trading, transaction tracking, and cash balance management.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<a href="word_game.exe" class="media-1 shadow-sm">
-								<img src="images/wordgame.jpg" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Word Jumble Game</h2>
-									<span class="category">Application</span>
-								</div>
-							</a>
-							<div>
-								<span class="subheading d-inline-block">Application</span>
-								<h3 class="h5">Word Jumble Game</h3>
-								<p class="overflow-auto mh">A word guessing game built using Tkinter. Players are presented with a shuffled word, Players have to guess the correct word to earn points. They can reshuffle the letters, get hints, skip words if they're stuck. The game tracks lives and points, providing a challenging and enjoyable experience.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<a href="https://cooing-hornet-zealon.koyeb.app/" class="media-1 shadow-sm" target="_blank">
-								<img src="images/birthday.jpg" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Birthday Tracker</h2>
-									<span class="category">Database</span>
-								</div>
-							</a>
-							<div>
-								<span class="subheading d-inline-block">Database</span>
-								<h3 class="h5">Birthday Tracker</h3>
-								<p class="overflow-auto mh">A Flask-based application for storing and managing birthdays. Allows users to add, edit, and delete birthday entries.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<a href="https://commerce1.azurewebsites.net/" class="media-1 shadow-sm" target="_blank">
-								<img src="images/e-commerce.jpg" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Auction Site</h2>
-									<span class="category">Web Application</span>
-								</div>
-							</a>
-							<div>
-								<span class="subheading d-inline-block">Web Application</span>
-								<h3 class="h5">Auction Site</h3>
-								<p class="overflow-auto mh">An eBay-like e-commerce auction site developed using Django, allowing users to post auction listings, place bids on listings, comment on listings, and add listings to a watchlist.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<a href="https://projects-0qr3.onrender.com/" class="media-1 shadow-sm" target="_blank">
-								<img src="images/wiki.jpg" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Wiki</h2>
-									<span class="category">Web Application</span>
-								</div>
-							</a>
-							<div>
-								<span class="subheading d-inline-block">Web Application</span>
-								<h3 class="h5">Wiki</h3>
-								<p class="overflow-auto mh">A Django-based application allowing users to create, edit, search, and view encyclopedia entries stored in Markdown format which are then converted to HTML before being displayed</p>
-							</div>
-						</div>
-
-						<div class="col-md-6 col-lg-3">
-							<a href="calculator.exe" class="media-1 shadow-sm">
-								<img src="images/calculator.jpg" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Calculator</h2>
-									<span class="category">Application</span>
-								</div>
-							</a>
-							<div>
-								<span class="subheading d-inline-block">Application</span>
-								<h3 class="h5">Calculator</h3>
-								<p class="overflow-auto mh">A minimalist desktop calculator application for performing simple arithmetic operations with ease.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-3">
-							<a href="https://madefromjames.github.io/google/" class="media-1 shadow-sm" target="_blank">
-								<img src="images/google.jpg" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Google URLs</h2>
-									<span class="category">Website</span>
-								</div>
-							</a>
-							<div>
-								<span class="subheading d-inline-block">HTML/CSS</span>
-								<h3 class="h5">Google URLs</h3>
-								<p class="overflow-auto mh">Recreated Google's search interface with HTML and CSS, allowing users experiment with making Google searches to determine parameter names</p>
-							</div>
-						</div>
-						<!-- <div class="col-md-6 col-lg-3">
-							<a href="images/img_v_7-min.jpg" class="media-1 shadow-sm">
-								<img src="images/img_v_7-min.jpg" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Upcoming Projects</h2>
-									<span class="category">Coming soon</span>
-								</div>
-							</a>
-							<div>
-								<span class="subheading d-inline-block">More features soon</span>
-								<h3 class="h5">Upcoming Projects</h3>
-								<p class="overflow-auto mh">Stay tuned for an exciting new project that will revolutionize the way you interact with technology. Coming soon!</p>
-							</div> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="section bg-light">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 pe-lg-6">
-				</div>
-				<div class="col-lg-8">
-					<div class="row">
-						<div class="col-6 col-lg-6 mt-5">
-							<img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid rounded">
-						</div>
-						<div class="col-6 col-lg-6">
-							<img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid rounded">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- <div class="hero v-h-half overlay" id="skills">
-		<nav class="site-nav">
-			<div class="container">
-				<div class="site-navigation">
-					<ul class="d-block site-menu float-end">
-						<li><a href="#">Home</a></li>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="mailto:madefromjames@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://x.com/madefromjames" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/madefromjames/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/madefromjames" class="icon brands fa-github"><span class="label">Github</span></a></li>
 					</ul>
-				</div>
-			</div>
-		</nav>
-		<div>
-			<img src="images/hero-2-min.jpg" alt="Image" class="img-fluid">
-		</div>
-		<div class="container">
-			<div class="row align-items-center v-h-half">
+				</footer>
+			</section>
 
-				<div class="col-lg-7 col-xxl-6 mx-auto text-center">
-					<h1 class="heading-2 text-white mb-3">Skills</h1>
-					<p class="text-white lead mb-4">Witness the visual representation of my technical prowess, where each skill is quantified by a progress bar.</p>
-				</div>
-			</div>
-		</div>
-	</div> -->
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-	<div class="hero v-h-half overlay" id="about">
-		<nav class="site-nav">
-			<div class="container">
-				<div class="site-navigation">
-					<ul class="d-block site-menu float-end">
-						<li><a href="#">Home</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<div >
-			<img src="images/hero_3.jpg" alt="Image" class="img-fluid">
-		</div>
-		<div class="container">
-			<div class="row align-items-center v-h-half">
+				<!-- Main -->
+					<div id="main">
 
-				<div class="col-lg-7 col-xxl-6 mx-auto text-center">
-					<h1 class="heading-2 text-white mb-3">About</h1>
-					<p class="text-white lead mb-4">Get to know the person behind the code. Learn about my background, skills, and passion for technology.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="section">
-		<div class="container">
-
-			<div class="testimonial-wrap">
-				<div id="">
-					<div class="item">
-						<div class="testmonial">
-							<div class="d-flex author align-items-center mb-3">
-								<div class="pic">
-									<img src="images/myself.jpg" alt="Image" class="img-fluid">
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/banner.jpg" alt="" />
 								</div>
-								<div class="author-name">
-									<h2>James Emmanuel</h2>
-									<span>Junior Developer</span>
+								<div class="container">
+									<header class="major">
+										<h2>James.</h2>
+										<p>A Software Engineer with a focus on backend development and open-source contributions. Available for hire </p>
+										<!-- <p>Feel free to reach out on <a href="https://www.linkedin.com/in/madefromjames/" target="_blank">LinkedIn</a> or visit <a href="https://github.com/madefromjames" target="_blank">GitHub.</a></p> -->
+										<ul class="actions">
+											<li><a href="https://madefromjames.github.io/resume.pdf" class="button primary icon solid fa-download">Download Resume</a></li>
+										</ul>
+									</header>
+									<p>James is a Lagos native, born, raised, and currently residing there, but he’s eager to explore other parts of the world. He thrives on learning new technologies and solving complex challenges to build software that makes a positive impact. Raised with a curiosity for how things work, he enjoys collaborating with teams and learning from diverse perspectives. Outside of work, James loves playing video games, checking out sports highlights, and listening to music. Guided by empathy and a desire to do good, he aims to use his skills to contribute to projects that foster innovation, growth, and make a meaningful impact in the tech world.</p>
 								</div>
-							</div>
-							<div class="text-white">
-								<p>I am dedicated and passionate about computer science principles and have a keen interest in the latest programming languages and frameworks. My academic journey at the University of the People, complemented by specialized coursework from Harvard’s CS50, has equipped me with both theoretical knowledge and practical programming skills.</p>
-								<p>I have built a variety of projects using Python, leveraging frameworks such as Django and Flask to create dynamic web applications. My proficiency with SQL has enabled me to design efficient databases that drive the backend of these applications. I excel in bringing ideas to life through code, with a particular talent for backend development and a growing expertise in front-end basics.</p>
-								<!-- <p>I am eager to utilize my skills in a challenging environment where I can contribute to impactful projects and continue to grow as a developer. I aim to join a team that values innovation, collaboration, and a commitment to excellence.</p> -->
-								<p class="d-flex"><a href="resume.pdf" class="btn btn-primary-outline white me-4 mt-3">Download Resume</a></p>
-							</div>
-						</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Things I Can Do</h3>
+									<ul class="feature-icons">
+										<li class="icon solid fa-code">Write clean, and efficient code</li>
+										<li class="icon solid fa-cubes">Debug and troubleshoot issues</li>
+										<li class="icon solid fa-book">Read documentation - RTFM!</li>
+										<li class="icon solid fa-coffee">Drink some coffee for extra focus</li>
+										<li class="icon solid fa-bolt">Apply empathy and critical thinking</li>
+										<li class="icon solid fa-users">Collaborate with diverse teams</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>A Few Projects</h3>
+									<p>Browse through my portfolio to see examples of my work and projects.</p>
+									<div class="features">
+										<article>
+											<a href="https://commerce1.azurewebsites.net/" class="image" target="_blank"><img src="images/e-commerce.jpg" alt="auction site image" /></a>
+											<div class="inner">
+												<h4>eBay Auction Site</h4>
+												<p>An eBay-like e-commerce auction site developed using Django, allowing users to post auction listings, place bids on listings, comment on listings, and add listings to a watchlist.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://madefromjames.pythonanywhere.com/" target="_blank" class="image"><img src="images/stocks.jpg" alt="stocks" /></a>
+											<div class="inner">
+												<h4>Stock Market</h4>
+												<p>A financial management tool built with Flask, enabling stock trading, transaction tracking, and cash balance management. Users can manage and monitor their stock portfolio in real-time, with an intuitive interface for tracking investments.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://cooing-hornet-zealon.koyeb.app/" class="image" target="_blank"><img src="images/birthday.jpg" alt="birthday image" /></a>
+											<div class="inner">
+												<h4>Birthday Tracker</h4>
+												<p>A Flask-based application for managing birthdays. Users can add, edit, and delete birthday entries, making it easy to keep track of important dates.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://projects-0qr3.onrender.com/" class="image" target="_blank"><img src="images/wiki.jpg" alt="birthday image" /></a>
+											<div class="inner">
+												<h4>Wiki</h4>
+												<p>A Django-based application that allows users to create, edit, search, and view encyclopedia entries stored in Markdown format. The Markdown content is converted to HTML before being displayed, providing a user-friendly interface for managing and exploring entries.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://madefromjames.github.io/word_game.exe" class="image"><img src="images/wordgame.jpg" alt="word game" /></a>
+											<div class="inner">
+												<h4>Word Jumble Game</h4>
+												<p>A word guessing game built using Tkinter. Players are presented with a shuffled word and must guess the correct word to earn points. The game offers options to reshuffle the letters, get hints, or skip words if players are stuck. It tracks lives and points, creating a fun and challenging experience.</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/upcoming.jpg" alt="upcoming projects" /></a>
+											<div class="inner">
+												<h4>Upcoming Projects</h4>
+												<p>Stay tuned for more exciting projects! I am currently working on additional projects that will further demonstrate my skills. Check back for updates as I continue to grow and explore new technologies!</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>That's more my thing.</p>
+									<form method="post" action="#">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" class="primary" value="Send Message" /></li>
+													<li><input type="reset" value="Reset Form" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+
+						<!-- Five -->
+						
+							<!-- <section id="five">
+								<div class="container">
+									<h3>Elements</h3>
+
+									<section>
+										<h4>Text</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+										<hr />
+										<header>
+											<h4>Heading with a Subtitle</h4>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<header>
+											<h5>Heading with a Subtitle</h5>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<hr />
+										<h2>Heading Level 2</h2>
+										<h3>Heading Level 3</h3>
+										<h4>Heading Level 4</h4>
+										<h5>Heading Level 5</h5>
+										<h6>Heading Level 6</h6>
+										<hr />
+										<h5>Blockquote</h5>
+										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+										<h5>Preformatted</h5>
+										<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									</section>
+
+									<section>
+										<h4>Lists</h4>
+										<div class="row">
+											<div class="col-6 col-12-xsmall">
+												<h5>Unordered</h5>
+												<ul>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+												<h5>Alternate</h5>
+												<ul class="alt">
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<h5>Ordered</h5>
+												<ol>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ol>
+												<h5>Icons</h5>
+												<ul class="icons">
+													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<h5>Actions</h5>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+										<ul class="actions small">
+											<li><a href="#" class="button primary small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<div class="row">
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary">Default</a></li>
+													<li><a href="#" class="button">Default</a></li>
+													<li><a href="#" class="button alt">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6 col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small">Small</a></li>
+													<li><a href="#" class="button small">Small</a></li>
+													<li><a href="#" class="button alt small">Small</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary fit">Default</a></li>
+													<li><a href="#" class="button fit">Default</a></li>
+													<li><a href="#" class="button alt fit">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small fit">Small</a></li>
+													<li><a href="#" class="button small fit">Small</a></li>
+													<li><a href="#" class="button alt small fit">Small</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section>
+										<h4>Table</h4>
+										<h5>Default</h5>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+
+										<h5>Alternate</h5>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
+
+									<section>
+										<h4>Buttons</h4>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Primary</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Alternate</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary large">Large</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<ul class="actions fit">
+											<li><a href="#" class="button primary fit">Fit</a></li>
+											<li><a href="#" class="button fit">Fit</a></li>
+											<li><a href="#" class="button alt fit">Fit</a></li>
+										</ul>
+										<ul class="actions fit small">
+											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+											<li><a href="#" class="button fit small">Fit + Small</a></li>
+											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
+										</ul>
+										<ul class="actions">
+											<li><span class="button primary disabled">Primary</span></li>
+											<li><span class="button disabled">Default</span></li>
+											<li><span class="button alt disabled">Alternate</span></li>
+										</ul>
+									</section>
+
+									<section>
+										<h4>Form</h4>
+										<form method="post" action="#">
+											<div class="row gtr-uniform">
+												<div class="col-6 col-12-xsmall">
+													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<select name="demo-category" id="demo-category">
+														<option value="">- Category -</option>
+														<option value="1">Manufacturing</option>
+														<option value="1">Shipping</option>
+														<option value="1">Administration</option>
+														<option value="1">Human Resources</option>
+													</select>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-normal" name="demo-priority">
+													<label for="demo-priority-normal">Normal Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-high" name="demo-priority">
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-copy" name="demo-copy">
+													<label for="demo-copy">Email me a copy of this message</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-human" name="demo-human" checked>
+													<label for="demo-human">I am a human and not a robot</label>
+												</div>
+												<div class="col-12">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+									<section>
+										<h4>Image</h4>
+										<h5>Fit</h5>
+										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h5>Left &amp; Right</h5>
+										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</section>
+
+								</div>
+							</section> -->
+						
+
 					</div>
 
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- <section class="bsb-skill-1 bg-light py-3 py-md-5">
-		<div class="col-12 text-center">
-			<h2 class="mb-4">Skills</h2>
-		</div>
-	  
-		<div class="container overflow-hidden">
-		  <div class="row justify-content-xl-center gy-3 gy-sm-4">
-			<div class="col-12 col-sm-6 col-xl-5">
-			  <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
-				<h3 class="fw-bold mb-2">HTML</h3>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-1" role="progressbar" aria-label="Bootstrap" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 col-sm-6 col-xl-5">
-			  <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
-				<h3 class="fw-bold mb-2">CSS</h3>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-5" role="progressbar" aria-label="Bootstrap" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 col-sm-6 col-xl-5">
-			  <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
-				<h3 class="fw-bold mb-2">Bootstrap</h3>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-6" role="progressbar" aria-label="React" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 col-sm-6 col-xl-5">
-			  <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
-				<h3 class="fw-bold mb-2">JavaScript</h3>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-2" role="progressbar" aria-label="Vue" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 col-sm-6 col-xl-5">
-			  <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
-				<h3 class="fw-bold mb-2">Python</h3>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-4" role="progressbar" aria-label="WordPress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 col-sm-6 col-xl-5">
-			  <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
-				<h3 class="fw-bold mb-2">Flask</h3>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-4" role="progressbar" aria-label="WordPress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 col-sm-6 col-xl-5">
-			  <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
-				<h3 class="fw-bold mb-2">Django</h3>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-4" role="progressbar" aria-label="WordPress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 col-sm-6 col-xl-5">
-			  <div class="bg-white rounded shadow-sm p-3 p-md-4 p-xxl-5">
-				<h3 class="fw-bold mb-2">SQL</h3>
-				<div class="progress">
-				  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-width-4" role="progressbar" aria-label="WordPress" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section> -->
-	
-	<div class="section pt-0 mt-3">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 text-center">
-					<h2 class="mb-4">Education</h2>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-2">
-					<a class="grayscale">
-						<img src="images/uopeople.jpg" alt="Image" class="img-fluid">
-						<span class="subheading d-inline-block">University of the People</span>
-						<p class="text-muted mb-0"><i>2023 - Present</i></p>
-						<h3 class="h6 mb-3">BSc Computer Science</h3>
-					</a>
-				</div>
-				<div class="col-lg-2">
-					<a class="grayscale">
-						<img src="images/harvard.jpg" alt="Image" class="img-fluid">
-						<span class="subheading d-inline-block">Harvard CS50 Online</span>
-						<p class="text-muted mb-0"><i>2023 - Present</i></p>
-						<h3 class="h6 mb-3">Programming Courses</h3>
-					</a>
-				</div>
-				<div class="col-lg-2">
-					<a class="grayscale">
-						<img src="images/digitalfortress.jpg" alt="Image" class="img-fluid">
-						<span class="subheading d-inline-block">Digital Fortress</span>
-						<p class="text-muted mb-0"><i>2024</i></p>
-						<h3 class="h6 mb-3">Python Development</h3>
-					</a>
-				</div>
-				<div class="col-lg-2">
-					<a class="grayscale">
-						<img src="images/alx.jpg" alt="Image" class="img-fluid">
-						<span class="subheading d-inline-block">ALX Africa</span>
-						<p class="text-muted mb-0"><i>2022 - 2023</i></p>
-						<h3 class="h6 mb-3">Software Engineer</h3>
-					</a>
-				</div>
-				<div class="col-lg-2">
-					<a class="grayscale">
-						<img src="images/ffa.jpg" alt="Image" class="img-fluid">
-						<span class="subheading d-inline-block">Future Academy Africa</span>
-						<p class="text-muted mb-0"><i>2021 - 2022</i></p>
-						<h3 class="h6 mb-3">Front End Web Development</h3>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="section bg-light">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-7 text-center">
-					<h2 class="mb-5">Certificates</h2>
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-6 col-lg-4">
-							<a href="images/cert_2.png" class="media-1">
-								<img src="images/cert_2.png" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Digital Fortress / WAVE</h2>
-									<span class="category">Python Programming</span>
-								</div>
-								<span class="subheading d-inline-block">Digital Fortress / WAVE</span>
-							</a>
+				<!-- Footer -->
+					<!-- <section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; madefromjames.</li>
+							</ul>
+							<ul class="icons">
+								<li><a href="mailto:madefromjames@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://x.com/madefromjames" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/madefromjames" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/madefromjames/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
 						</div>
-						<div class="col-md-6 col-lg-4">
-							<a href="images/CS50P.png" class="media-1">
-								<img src="images/CS50P.png" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Harvard CS50P</h2>
-									<span class="category">Introduction to Python</span>
-								</div>
-								<span class="subheading d-inline-block">Harvard CS50 Online</span>
-							</a>
-						</div>
-						<div class="col-md-6 col-lg-4">
-							<a href="images/cert_1.png" class="media-1">
-								<img src="images/cert_1.png" alt="Image" class="img-fluid">
-								<div class="media-1-content">
-									<h2>Future Academy Africa</h2>
-									<span class="category">Frontend Web Development</span>
-								</div>
-								<span class="subheading d-inline-block">Future Academy Africa</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="hero v-h-half overlay mb-5" id="contact">
-		<nav class="site-nav">
-			<div class="container">
-				<div class="site-navigation">
-					<ul class="d-block site-menu float-end">
-						<li><a href="#">Home</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<div>
-			<img src="images/hero_4.jpg" alt="Image" class="img-fluid">
-		</div>
-		<div class="container">
-			<div class="row align-items-center v-h-half">
-
-				<div class="col-lg-7 col-xxl-6 mx-auto text-center">
-					<h1 class="heading-2 text-white mb-3">Contact</h1>
-					<p class="text-white lead mb-4">Have questions or inquiries? Use the contact form or connect with me through email or social media.</p>
-				</div>
+					</section> -->
 
 			</div>
-		</div>
-	</div>
 
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-	<div id="contact-form" class="section section-contact m-md-5 px-md-5">
-		<div class="container">
-			<h2>Fill the contact form</h2>
-			<p class="mb-4">Send a message</p>
-
-			<form action="https://formspree.io/f/mgegnneo" class="form-contact" method="post">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="form-group">
-							<input type="text" name="name" class="form-control" placeholder="Your name">
-						</div>	
-					</div>
-					<div class="col-lg-6">
-						<div class="form-group">
-							<input type="email" name="email" class="form-control" placeholder="Your email">
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-12">
-					<div class="form-group">
-						<textarea rows="10" cols="10" name="message" class="form-control" placeholder="Your message"></textarea>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<input type="submit" class="btn btn-black" value="Send message">
-				</div>
-
-			</form>
-		</div>	
-	</div>
-
-	<div class="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3 id="get-in-touch">Get in touch</h3>
-						<ul class="list-unstyled link">
-							<li><a href="mailto:madefromjames@gmail.com" target="_blank">madefromjames@gmail.com</a></li>
-						</ul>
-
-						<ul class="list-unstyled social">
-							<li><a href="https://twitter.com/madefromjames" target="_blank"><span class="icon-twitter"></span></a></li>
-							<li><a href="https://github.com/madefromjames" target="_blank"><span class="icon-github"></span></a></li>
-							<li><a href="https://www.linkedin.com/in/madefromjames/" target="_blank"><span class="icon-linkedin"></span></a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3>Sources</h3>
-						<ul class="list-unstyled float-start links">
-							<li><a href="#">Home</a></li>
-							<!-- <li><a href="#skills">Skills</a></li> -->
-							<li><a href="#about">About</a></li>
-						</ul>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3>Links</h3>
-						<ul class="list-unstyled links">
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul><br>
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-4 -->
-			</div> <!-- /.row -->
-
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; madefromjames
-					</p>
-				</div>
-			</div>
-		</div> <!-- /.container -->
-	</div> <!-- /.site-footer -->
-
-</body>
+	</body>
 </html>
